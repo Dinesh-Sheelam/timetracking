@@ -1,0 +1,230 @@
+2024-11-23 22:48:51: Action received: login for employee ID: 3
+2024-11-23 22:48:51: Checking active session: No active session
+2024-11-23 22:48:51: Successfully created login entry. Insert ID: 39
+2024-11-23 22:48:54: Action received: logout for employee ID: 3
+2024-11-23 22:48:54: Successfully logged out user
+2024-11-23 22:48:55: Action received: login for employee ID: 3
+2024-11-23 22:48:55: Checking active session: No active session
+2024-11-23 22:48:55: Successfully created login entry. Insert ID: 40
+2024-11-23 22:49:00: Action received: logout for employee ID: 3
+2024-11-23 22:49:00: Successfully logged out user
+2024-11-23 22:49:02: Action received: login for employee ID: 3
+2024-11-23 22:49:02: Checking active session: No active session
+2024-11-23 22:49:02: Successfully created login entry. Insert ID: 41
+2024-11-23 22:50:20: Action received: logout for employee ID: 3
+2024-11-23 22:50:20: No active session found to log out
+2024-11-24 03:20:43: Processing action: login for employee ID: 3
+2024-11-24 03:20:43: Active sessions found: 0
+2024-11-24 03:20:43: Successfully created login entry. ID:  at time: 2024-11-24 03:20:43
+2024-11-24 03:20:43: Table structure: Array
+(
+    [Table] => time_entries
+    [Create Table] => CREATE TABLE `time_entries` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `employee_id` int(11) NOT NULL,
+  `login_time` datetime NOT NULL,
+  `logout_time` datetime DEFAULT NULL,
+  `total_time` time DEFAULT NULL,
+  `entry_type` enum('auto','manual') DEFAULT 'auto',
+  `status` enum('pending','approved','rejected') DEFAULT 'approved',
+  `remarks` text DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  KEY `employee_id` (`employee_id`),
+  CONSTRAINT `time_entries_ibfk_1` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+)
+
+2024-11-24 03:20:43: Redirecting to dashboard
+2024-11-24 03:20:48: Processing action: logout for employee ID: 3
+2024-11-24 03:20:48: Logout successful. Rows affected:  at time: 2024-11-24 03:20:48
+2024-11-24 03:20:48: Table structure: Array
+(
+    [Table] => time_entries
+    [Create Table] => CREATE TABLE `time_entries` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `employee_id` int(11) NOT NULL,
+  `login_time` datetime NOT NULL,
+  `logout_time` datetime DEFAULT NULL,
+  `total_time` time DEFAULT NULL,
+  `entry_type` enum('auto','manual') DEFAULT 'auto',
+  `status` enum('pending','approved','rejected') DEFAULT 'approved',
+  `remarks` text DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
+  PRIMARY KEY (`id`),
+  KEY `employee_id` (`employee_id`),
+  CONSTRAINT `time_entries_ibfk_1` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+)
+
+2024-11-24 03:20:48: Redirecting to dashboard
+2024-11-24 03:21:43: Processing action: manual_entry for employee ID: 3
+2024-11-24 03:22:14: Processing action: manual_entry for employee ID: 3
+2024-11-24 03:23:56: Processing action: login for employee ID: 3
+2024-11-24 03:23:56: Active sessions found: 0
+2024-11-24 03:23:56: Successfully created login entry at time: 2024-11-24 03:23:56
+2024-11-24 03:23:56: Redirecting to dashboard
+2024-11-24 03:23:59: Processing action: logout for employee ID: 3
+2024-11-24 03:23:59: Logout successful at: 2024-11-24 03:23:59
+2024-11-24 03:23:59: Redirecting to dashboard
+2024-11-24 03:24:32: Processing action: manual_entry for employee ID: 3
+2024-11-24 03:24:32: Manual entry created successfully for date: 2024-11-22
+2024-11-24 03:24:32: Redirecting to dashboard
+2024-11-24 03:37:52: Processing action: manual_entry for employee ID: 3
+2024-11-24 03:37:52: Manual entry created successfully for date: 2024-11-01
+2024-11-24 03:37:52: Redirecting to dashboard
+2024-11-24 03:38:22: Processing action: login for employee ID: 3
+2024-11-24 03:38:22: Active sessions found: 0
+2024-11-24 03:38:22: Successfully created login entry at time: 2024-11-24 03:38:22
+2024-11-24 03:38:22: Redirecting to dashboard
+2024-11-24 03:38:24: Processing action: logout for employee ID: 3
+2024-11-24 03:38:24: Logout successful at: 2024-11-24 03:38:24
+2024-11-24 03:38:24: Redirecting to dashboard
+2024-11-24 04:52:29: Processing action: login for employee ID: 3
+2024-11-24 04:52:29: Active sessions found: 0
+2024-11-24 04:52:29: Successfully created login entry at time: 2024-11-24 04:52:29
+2024-11-24 04:52:29: Redirecting to dashboard
+2024-11-24 04:52:32: Processing action: logout for employee ID: 3
+2024-11-24 04:52:32: Logout successful at: 2024-11-24 04:52:32
+2024-11-24 04:52:32: Redirecting to dashboard
+2024-11-24 05:11:00: Processing action: login for employee ID: 3
+2024-11-24 05:11:00: Active sessions found: 0
+2024-11-24 05:11:00: Successfully created login entry at time: 2024-11-24 05:11:00
+2024-11-24 05:11:00: Redirecting to dashboard
+2024-11-24 05:11:04: Processing action: logout for employee ID: 3
+2024-11-24 05:11:04: Logout successful at: 2024-11-24 05:11:04
+2024-11-24 05:11:04: Redirecting to dashboard
+2024-11-23 17:42:45: Processing action: login for employee ID: 3
+2024-11-23 17:42:45: Active sessions found: 0
+2024-11-23 17:42:45: Successfully created login entry at time: 2024-11-23 17:42:45
+2024-11-23 17:42:45: Redirecting to dashboard
+2024-11-23 17:42:47: Processing action: logout for employee ID: 3
+2024-11-23 17:42:47: Logout successful at: 2024-11-23 17:42:47
+2024-11-23 17:42:47: Redirecting to dashboard
+2024-11-23 17:42:51: Processing action: login for employee ID: 3
+2024-11-23 17:42:51: Active sessions found: 0
+2024-11-23 17:42:51: Successfully created login entry at time: 2024-11-23 17:42:51
+2024-11-23 17:42:51: Redirecting to dashboard
+2024-11-23 17:42:56: Processing action: logout for employee ID: 3
+2024-11-23 17:42:56: Logout successful at: 2024-11-23 17:42:56
+2024-11-23 17:42:56: Redirecting to dashboard
+2024-11-24 05:17:46: Processing action: login for employee ID: 3
+2024-11-24 05:17:46: Active sessions found: 0
+2024-11-24 05:17:46: Successfully created login entry at time: 2024-11-24 05:17:46
+2024-11-24 05:17:46: Redirecting to dashboard
+2024-11-24 05:17:49: Processing action: logout for employee ID: 3
+2024-11-24 05:17:49: Logout successful at: 2024-11-24 05:17:49
+2024-11-24 05:17:49: Redirecting to dashboard
+2024-11-24 00:04:26: Processing action: login for employee ID: 3
+2024-11-24 00:04:26: Active sessions found: 0
+2024-11-24 00:04:26: Successfully created login entry at time: 2024-11-24 00:04:26
+2024-11-24 00:04:26: Redirecting to dashboard
+2024-11-24 00:04:31: Processing action: logout for employee ID: 3
+2024-11-24 00:04:31: Logout successful at: 2024-11-24 00:04:31
+2024-11-24 00:04:31: Redirecting to dashboard
+2024-11-24 00:04:51: Processing action: login for employee ID: 3
+2024-11-24 00:04:51: Active sessions found: 0
+2024-11-24 00:04:51: Successfully created login entry at time: 2024-11-24 00:04:51
+2024-11-24 00:04:51: Redirecting to dashboard
+2024-11-24 00:04:53: Processing action: logout for employee ID: 3
+2024-11-24 00:04:53: Logout successful at: 2024-11-24 00:04:53
+2024-11-24 00:04:53: Redirecting to dashboard
+2024-11-24 05:35:07: Processing action: login for employee ID: 3
+2024-11-24 05:35:07: Active sessions found: 0
+2024-11-24 05:35:07: Successfully created login entry at time: 2024-11-24 05:35:07
+2024-11-24 05:35:07: Redirecting to dashboard
+2024-11-24 05:35:09: Processing action: logout for employee ID: 3
+2024-11-24 05:35:09: Logout successful at: 2024-11-24 05:35:09
+2024-11-24 05:35:09: Redirecting to dashboard
+2024-11-23 19:38:25: Processing action: login for employee ID: 3 in timezone: America/Chicago
+2024-11-23 19:38:25: Login time in local timezone: 2024-11-23 19:38:25
+2024-11-23 19:38:25: Successfully created login entry at: 2024-11-23 19:38:25
+2024-11-23 19:38:25: Redirecting to dashboard
+2024-11-23 19:38:29: Processing action: logout for employee ID: 3 in timezone: America/Chicago
+2024-11-23 19:38:29: Logout time in local timezone: 2024-11-23 19:38:29
+2024-11-23 19:38:29: Successfully logged out at: 2024-11-23 19:38:29
+2024-11-23 19:38:29: Redirecting to dashboard
+2024-11-23 19:38:30: Processing action: login for employee ID: 3 in timezone: America/Chicago
+2024-11-23 19:38:30: Login time in local timezone: 2024-11-23 19:38:30
+2024-11-23 19:38:30: Successfully created login entry at: 2024-11-23 19:38:30
+2024-11-23 19:38:30: Redirecting to dashboard
+2024-11-23 19:38:38: Processing action: logout for employee ID: 3 in timezone: America/Chicago
+2024-11-23 19:38:38: Logout time in local timezone: 2024-11-23 19:38:38
+2024-11-23 19:38:38: Successfully logged out at: 2024-11-23 19:38:38
+2024-11-23 19:38:38: Redirecting to dashboard
+2024-11-23 19:41:15: Action: login, Employee: 3, Timezone: America/Chicago
+2024-11-23 19:41:15: Active sessions found: 0
+2024-11-23 19:41:15: Current time for login: 2024-11-23 19:41:15
+2024-11-23 19:41:15: Login entry created successfully with ID: 9
+2024-11-23 19:41:15: Processing complete - redirecting to dashboard
+2024-11-23 19:41:19: Action: logout, Employee: 3, Timezone: America/Chicago
+2024-11-23 19:41:19: Current time for logout: 2024-11-23 19:41:19
+2024-11-23 19:41:19: Logout successful. Rows affected: 1
+2024-11-23 19:41:19: Processing complete - redirecting to dashboard
+2024-11-23 19:41:21: Action: login, Employee: 3, Timezone: America/Chicago
+2024-11-23 19:41:21: Active sessions found: 0
+2024-11-23 19:41:21: Current time for login: 2024-11-23 19:41:21
+2024-11-23 19:41:21: Login entry created successfully with ID: 10
+2024-11-23 19:41:21: Processing complete - redirecting to dashboard
+2024-11-23 19:41:28: Action: logout, Employee: 3, Timezone: America/Chicago
+2024-11-23 19:41:28: Current time for logout: 2024-11-23 19:41:28
+2024-11-23 19:41:28: Logout successful. Rows affected: 1
+2024-11-23 19:41:28: Processing complete - redirecting to dashboard
+2024-11-23 19:42:30: Action: login, Employee: 3, Timezone: America/Chicago
+2024-11-23 19:42:30: Active sessions found: 0
+2024-11-23 19:42:30: Current time for login: 2024-11-23 19:42:30
+2024-11-23 19:42:30: Login entry created successfully with ID: 11
+2024-11-23 19:42:30: Processing complete - redirecting to dashboard
+2024-11-23 19:42:34: Action: logout, Employee: 3, Timezone: America/Chicago
+2024-11-23 19:42:34: Current time for logout: 2024-11-23 19:42:34
+2024-11-23 19:42:34: Logout successful. Rows affected: 1
+2024-11-23 19:42:34: Processing complete - redirecting to dashboard
+2024-11-23 19:45:00: Action: login, Employee: 3, Timezone: America/Chicago
+2024-11-23 19:45:00: Active sessions found: 0
+2024-11-23 19:45:00: Current time for login: 2024-11-23 19:45:00
+2024-11-23 19:45:00: Login entry created successfully with ID: 12
+2024-11-23 19:45:00: Processing complete - redirecting to dashboard
+2024-11-23 19:45:02: Action: logout, Employee: 3, Timezone: America/Chicago
+2024-11-23 19:45:02: Current time for logout: 2024-11-23 19:45:02
+2024-11-23 19:45:02: Logout successful. Rows affected: 1
+2024-11-23 19:45:02: Processing complete - redirecting to dashboard
+2024-11-23 19:45:05: Action: login, Employee: 3, Timezone: America/Chicago
+2024-11-23 19:45:05: Active sessions found: 0
+2024-11-23 19:45:05: Current time for login: 2024-11-23 19:45:05
+2024-11-23 19:45:05: Login entry created successfully with ID: 13
+2024-11-23 19:45:05: Processing complete - redirecting to dashboard
+2024-11-23 19:45:17: Action: logout, Employee: 3, Timezone: America/Chicago
+2024-11-23 19:45:17: Current time for logout: 2024-11-23 19:45:17
+2024-11-23 19:45:17: Logout successful. Rows affected: 1
+2024-11-23 19:45:17: Processing complete - redirecting to dashboard
+2024-11-23 19:45:50: Action: login, Employee: 3, Timezone: America/Chicago
+2024-11-23 19:45:50: Active sessions found: 0
+2024-11-23 19:45:50: Current time for login: 2024-11-23 19:45:50
+2024-11-23 19:45:50: Login entry created successfully with ID: 1
+2024-11-23 19:45:50: Processing complete - redirecting to dashboard
+2024-11-23 19:45:55: Action: logout, Employee: 3, Timezone: America/Chicago
+2024-11-23 19:45:55: Current time for logout: 2024-11-23 19:45:55
+2024-11-23 19:45:55: Logout successful. Rows affected: 1
+2024-11-23 19:45:55: Processing complete - redirecting to dashboard
+2024-11-23 19:46:31: Action: manual_entry, Employee: 3, Timezone: America/Chicago
+2024-11-23 19:46:31: Manual entry - Login: 2024-11-21 09:45:00, Logout: 2024-11-21 21:46:00
+2024-11-23 19:46:31: Manual entry created successfully with ID: 2
+2024-11-23 19:46:31: Processing complete - redirecting to dashboard
+2024-11-23 20:02:11: Action: login, Employee: 3, Timezone: America/Chicago
+2024-11-23 20:02:11: Active sessions found: 0
+2024-11-23 20:02:11: Current time for login: 2024-11-23 20:02:11
+2024-11-23 20:02:11: Login entry created successfully with ID: 3
+2024-11-23 20:02:11: Processing complete - redirecting to dashboard
+2024-11-23 20:02:15: Action: logout, Employee: 3, Timezone: America/Chicago
+2024-11-23 20:02:15: Current time for logout: 2024-11-23 20:02:15
+2024-11-23 20:02:15: Logout successful. Rows affected: 1
+2024-11-23 20:02:15: Processing complete - redirecting to dashboard
+2024-11-23 21:08:46: Action: login, Employee: 3, Timezone: America/Chicago
+2024-11-23 21:08:46: Active sessions found: 0
+2024-11-23 21:08:46: Current time for login: 2024-11-23 21:08:46
+2024-11-23 21:08:46: Login entry created successfully with ID: 4
+2024-11-23 21:08:46: Processing complete - redirecting to dashboard
+2024-11-24 09:53:54: Action: logout, Employee: 3, Timezone: America/Chicago
+2024-11-24 09:53:54: Current time for logout: 2024-11-24 09:53:54
+2024-11-24 09:53:54: Logout successful. Rows affected: 1
+2024-11-24 09:53:54: Processing complete - redirecting to dashboard

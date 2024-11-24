@@ -1,0 +1,39 @@
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.login-card {
+    max-width: 400px;
+    width: 100%;
+}
+
+.dashboard-header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.time-entry-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.status-pending {
+    color: #ffc107;
+}
+
+.status-approved {
+    color: #28a745;
+}
+
+.status-rejected {
+    color: #dc3545;
+}
